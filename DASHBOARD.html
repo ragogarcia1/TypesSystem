@@ -40,7 +40,7 @@
     .cap-box{padding:18px;min-height:214px}.cap-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}.cap-ico{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#fff;font-size:20px}.chip{display:inline-block;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800;margin-bottom:10px}.chip.red{background:var(--coral-soft);color:#B24D43}.chip.blue{background:var(--blue-soft);color:var(--blue)}.chip.teal{background:var(--teal-soft);color:#17847F}.chip.gold{background:var(--gold-soft);color:#A77515}.chip.violet{background:var(--violet-soft);color:#6358D7}.cap-box p{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 10px}.cap-box ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:12px;line-height:1.5}
     .cap-map{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:stretch}.cap-map .node{padding:16px;border-radius:18px;color:#fff;min-height:110px}.cap-map .node b{display:block;font-size:14px;margin-bottom:6px}.cap-map .node span{font-size:12px;line-height:1.45;opacity:.95}
 
-    .stack-view{display:none}.stack-view.active{display:block}.simple-chain{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.chain-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;min-height:155px;position:relative}.chain-card small{display:block;color:var(--muted);font-size:12px;line-height:1.55;margin-top:8px}.tag{display:inline-block;margin-top:10px;padding:5px 8px;border-radius:999px;background:var(--blue-soft);color:var(--blue);font-size:10px;font-weight:800}.system-diagram{display:grid;grid-template-columns:1fr .8fr 1fr;gap:16px;align-items:center}.sys-col{display:grid;gap:12px}.sys-box{padding:16px;border-radius:18px;border:1px solid var(--line);background:#fff;text-align:center}.bridge{padding:16px;border-radius:22px;background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;text-align:center;box-shadow:var(--shadow)}.bridge b{display:block;font-size:16px}.bridge span{display:block;font-size:12px;line-height:1.5;margin-top:6px}.arrow-col{display:grid;place-items:center;color:var(--blue);font-size:28px;font-weight:800}
+    .stack-view{display:none}.stack-view.active{display:block}.simple-chain{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.chain-ecommerce{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.chain-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;min-height:155px;position:relative}.chain-card small{display:block;color:var(--muted);font-size:12px;line-height:1.55;margin-top:8px}.tag{display:inline-block;margin-top:10px;margin-right:6px;padding:5px 8px;border-radius:999px;background:var(--blue-soft);color:var(--blue);font-size:10px;font-weight:800}.system-diagram{display:grid;grid-template-columns:1fr .8fr 1fr;gap:16px;align-items:center}.sys-col{display:grid;gap:12px}.sys-box{padding:16px;border-radius:18px;border:1px solid var(--line);background:#fff;text-align:center}.bridge{padding:16px;border-radius:22px;background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;text-align:center;box-shadow:var(--shadow)}.bridge b{display:block;font-size:16px}.bridge span{display:block;font-size:12px;line-height:1.5;margin-top:6px}.arrow-col{display:grid;place-items:center;color:var(--blue);font-size:28px;font-weight:800}
     .data-layout{display:grid;grid-template-columns:1fr 1fr;gap:16px}.data-lane{border:1px solid var(--line);background:#fff;border-radius:22px;padding:18px}.data-lane h4{margin-bottom:12px}.data-pill{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:14px;background:#F8FBFE;border:1px solid var(--line);margin-bottom:10px}.data-pill b{font-size:13px}.data-pill span{font-size:12px;color:var(--muted)}
 
     .matrix-layout{display:grid;grid-template-columns:1fr 1fr;gap:16px}.weights .row{display:grid;grid-template-columns:1fr 60px;gap:12px;align-items:center;margin:16px 0 6px}.weights label{font-size:13px;font-weight:700}.weights .v{font-size:12px;font-weight:800;color:var(--blue);text-align:right} input[type=range]{width:100%;accent-color:var(--blue)} .weight-total{margin-top:14px;padding:10px 12px;border-radius:14px;background:var(--blue-soft);font-size:13px;font-weight:800;color:var(--blue)} .note{font-size:12px;color:var(--muted);line-height:1.6}
@@ -131,7 +131,7 @@
         <div>
           <div class="eyebrow">01 · mapa del proceso</div>
           <h2>Así se entiende el problema de un vistazo</h2>
-          <p>En lugar de diagramas complicados, resumimos el proceso en cinco pasos claros. Cada paso muestra qué pasa y dónde aparece el dolor principal.</p>
+          <p>Este es el flujo <b>order-to-cash</b> (pedido a efectivo) de Andina Bikes. En lugar de diagramas complicados, lo resumimos en cinco pasos claros: cada paso muestra qué pasa y dónde aparece el dolor principal.</p>
         </div>
         <div class="seg" id="processToggle">
           <button class="active" data-mode="asis">AS-IS · hoy</button>
@@ -231,6 +231,41 @@
           <div class="impact-cell"><div class="dots"><span class="dotx low"></span></div></div>
         </div>
       </div>
+
+      <div class="grid3" style="margin-top:16px">
+        <div class="card">
+          <h3>Actores del proceso</h3>
+          <table class="mini-table" style="margin-top:10px">
+            <tr><th>Actor</th><th>Rol</th></tr>
+            <tr><td>Ventas</td><td>Captura el pedido en tienda física o canal digital</td></tr>
+            <tr><td>Bodega</td><td>Reserva, alista y despacha el inventario</td></tr>
+            <tr><td>Planta</td><td>Fabrica cuando no hay stock disponible</td></tr>
+            <tr><td>Logística</td><td>Transporta y confirma la entrega al cliente</td></tr>
+            <tr><td>Finanzas</td><td>Factura y registra el cobro</td></tr>
+            <tr><td>Cliente</td><td>Recibe la promesa de entrega y el producto</td></tr>
+            <tr><td>Posventa</td><td>Atiende garantías, devoluciones y reclamos</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Decisiones relevantes</h3>
+          <p class="note" style="margin:8px 0 10px">Puntos donde el proceso obliga a elegir, y de donde salen los controles de la arquitectura:</p>
+          <ul style="font-size:13px;color:var(--muted);line-height:1.7;padding-left:18px;margin:0">
+            <li>¿Aceptar el pedido sin verificar stock o bloquear la venta hasta confirmar disponibilidad?</li>
+            <li>¿Fabricar sobre pedido o usar inventario ya existente en bodega?</li>
+            <li>¿Aprobar crédito del cliente antes o después de reservar el inventario?</li>
+            <li>¿Qué bodega de las tres surte el pedido cuando hay stock en más de una?</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Datos que sostienen el proceso</h3>
+          <p class="note" style="margin:8px 0 10px">Detalle completo con dueño de cada dato en <b>Integración → Datos</b>. Resumen aquí:</p>
+          <ul style="font-size:13px;color:var(--muted);line-height:1.7;padding-left:18px;margin:0">
+            <li>Maestros: cliente, producto / SKU (stock keeping unit — código único de referencia), bodega</li>
+            <li>Transaccionales: pedido, orden de producción, guía de despacho, factura</li>
+            <li>Estado: disponibilidad de inventario y estado de pago</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="panel" id="capacidades">
@@ -250,13 +285,34 @@
       </div>
       <div class="card" style="margin-top:16px">
         <h3>Traducción a familias de software</h3>
+        <p class="note" style="margin:8px 0 4px">Organizadas en las capas del portafolio empresarial. Los ejemplos son ilustración de mercado, no una decisión de marca — eso se define después, con presupuesto real.</p>
         <div class="cap-map" style="margin-top:14px">
-          <div class="node" style="background:linear-gradient(135deg,var(--blue),#5F95F6)"><b>OMS / CRM</b><span>Pedido único y control del canal físico + digital.</span></div>
-          <div class="node" style="background:linear-gradient(135deg,var(--teal),#51D9D1)"><b>WMS</b><span>Inventario, reservas, ubicaciones y trazabilidad.</span></div>
-          <div class="node" style="background:linear-gradient(135deg,var(--gold),#FFD36D)"><b>MRP ligero</b><span>Planeación básica y órdenes de producción.</span></div>
-          <div class="node" style="background:linear-gradient(135deg,var(--coral),#FF9B8F)"><b>Integración</b><span>APIs, eventos y control entre sistemas.</span></div>
-          <div class="node" style="background:linear-gradient(135deg,var(--violet),#A49BFF)"><b>ERP + BI</b><span>Facturación, cobro y versión única para análisis.</span></div>
+          <div class="node" style="background:linear-gradient(135deg,var(--blue),#5F95F6)"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff;margin-bottom:8px">Capa: cliente y desempeño</span><b>OMS (Order Management System) / CRM (Customer Relationship Management)</b><span>Pedido único y control del canal físico + digital.<br><i>Ejemplos: VTEX Order Management, Salesforce Sales Cloud</i></span></div>
+          <div class="node" style="background:linear-gradient(135deg,var(--teal),#51D9D1)"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff;margin-bottom:8px">Capa: ejecutar y controlar</span><b>WMS (Warehouse Management System)</b><span>Inventario, reservas, ubicaciones y trazabilidad.<br><i>Ejemplos: Manhattan Associates WMS, Odoo Inventory</i></span></div>
+          <div class="node" style="background:linear-gradient(135deg,var(--gold),#FFD36D)"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff;margin-bottom:8px">Capa: planificación y suministro</span><b>MRP (Material Requirements Planning) ligero</b><span>Planeación básica y órdenes de producción.<br><i>Ejemplos: Odoo Manufacturing, Katana MRP</i></span></div>
+          <div class="node" style="background:linear-gradient(135deg,var(--coral),#FF9B8F)"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff;margin-bottom:8px">Transversal</span><b>Integración (iPaaS / ESB)</b><span>APIs, eventos y control entre sistemas.<br><i>Ejemplos: MuleSoft Anypoint, Dell Boomi</i></span></div>
+          <div class="node" style="background:linear-gradient(135deg,var(--violet),#A49BFF)"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff;margin-bottom:8px">Capa: ejecutar + cliente</span><b>ERP (Enterprise Resource Planning) + BI (Business Intelligence)</b><span>Facturación, cobro y versión única para análisis.<br><i>Ejemplos: Siigo, Microsoft Dynamics 365 · BI: Power BI</i></span></div>
         </div>
+      </div>
+
+      <div class="evidence-note" style="margin-top:16px">
+        <b>ERP como registro vs. ERP como plataforma:</b> tener un ERP (Enterprise Resource Planning) no resuelve nada si cada área sigue trabajando con hojas de cálculo alrededor de él — eso deja datos maestros inconsistentes y reportes que solo cuadran al cierre. Lo que necesita Andina Bikes es un ERP como plataforma: estados compartidos entre áreas, controles preventivos e indicadores casi en tiempo real. Por eso la integración va antes que comprar un ERP nuevo.
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Alcance y exclusiones por familia</h3>
+        <div class="scope-grid" style="margin-top:14px">
+          <div class="scope-card"><span class="badge blue">OMS / CRM</span><h4>Pedido único</h4><p>Unifica tienda y canal digital en un solo flujo de captura.</p><ul><li>Excluye facturación electrónica</li><li>Excluye contabilidad completa</li></ul></div>
+          <div class="scope-card"><span class="badge">WMS</span><h4>Inventario</h4><p>Visibilidad y control de stock en las tres bodegas.</p><ul><li>Excluye planeación de producción</li><li>Excluye compras a proveedores</li></ul></div>
+          <div class="scope-card"><span class="badge gold">MRP ligero</span><h4>Producción</h4><p>Calcula necesidades de material y genera órdenes simples.</p><ul><li>Excluye control de piso de planta — eso sería un MES (Manufacturing Execution System)</li></ul></div>
+          <div class="scope-card"><span class="badge red">Integración</span><h4>iPaaS / ESB</h4><p>Conecta OMS, WMS, MRP y ERP sin reescribirlos.</p><ul><li>Excluye almacenar datos de negocio</li><li>Excluye reemplazar los sistemas que conecta</li></ul></div>
+          <div class="scope-card"><span class="badge green">ERP + BI</span><h4>Cierre y análisis</h4><p>Facturación, cobro y una sola versión de la verdad.</p><ul><li>Excluye resolver la integración por sí solo</li></ul></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Comprar, contratar (SaaS) o construir</h3>
+        <p class="note" style="margin:8px 0 0">Para OMS, WMS, integración y BI: comprar o contratar como SaaS (Software as a Service — software como servicio) — son capacidades estándar del mercado y acelerar es más valioso que controlarlas por completo. Construir a la medida solo se justifica si aparece algo realmente diferenciador de Andina Bikes (por ejemplo, un configurador de bicicleta personalizada) que ningún producto de mercado resuelva bien.</p>
       </div>
     </section>
 
@@ -271,6 +327,7 @@
           <button class="active" data-view="negocio">Proceso</button>
           <button data-view="sistemas">Sistemas</button>
           <button data-view="datos">Datos</button>
+          <button data-view="ecommerce">E-commerce</button>
         </div>
       </div>
 
@@ -287,15 +344,22 @@
       <div class="stack-view" id="view-sistemas">
         <div class="system-diagram">
           <div class="sys-col">
-            <div class="sys-box"><h4>OMS / CRM</h4><div class="note">captura de pedido</div></div>
+            <div class="sys-box"><h4>OMS / CRM</h4><div class="note">Order Management System / Customer Relationship Management — captura de pedido</div></div>
             <div class="sys-box"><h4>Canal físico + digital</h4><div class="note">un mismo flujo comercial</div></div>
           </div>
-          <div class="bridge"><b>Capa de integración</b><span>APIs + eventos + validaciones + trazabilidad</span></div>
+          <div class="bridge"><b>Capa de integración</b><span>API (Application Programming Interface) + eventos + ETL (Extract, Transform, Load) + orquestación</span></div>
           <div class="sys-col">
-            <div class="sys-box"><h4>WMS / MRP</h4><div class="note">inventario, reserva y producción</div></div>
-            <div class="sys-box"><h4>ERP / BI</h4><div class="note">facturación, cobro e indicadores</div></div>
+            <div class="sys-box"><h4>WMS / MRP</h4><div class="note">Warehouse Management System / Material Requirements Planning — inventario, reserva y producción</div></div>
+            <div class="sys-box"><h4>ERP / BI</h4><div class="note">Enterprise Resource Planning / Business Intelligence — facturación, cobro e indicadores</div></div>
           </div>
         </div>
+        <div class="scope-grid" style="margin-top:16px">
+          <div class="scope-card"><span class="badge blue">API</span><h4>Consulta o comando</h4><p>Interfaz de programación de aplicaciones (Application Programming Interface). Síncrona, exige contrato, versión y autenticación. Ej: consultar stock disponible.</p></div>
+          <div class="scope-card"><span class="badge">Evento</span><h4>Publica un hecho</h4><p>Desacopla productores y consumidores. Requiere idempotencia. Ej: <i>PedidoCreado</i>, <i>DespachoConfirmado</i>.</p></div>
+          <div class="scope-card"><span class="badge gold">ETL / ELT</span><h4>Mueve datos en lote</h4><p>Extract, Transform, Load / Extract, Load, Transform. Para conciliaciones periódicas, ej: cuadrar inventario del sistema contra el conteo físico.</p></div>
+          <div class="scope-card"><span class="badge red">Orquestación</span><h4>Coordina el flujo</h4><p>iPaaS (Integration Platform as a Service) o ESB (Enterprise Service Bus): transforma mensajes, reintenta y monitorea toda la cadena.</p></div>
+        </div>
+        <div class="evidence-note" style="margin-top:16px"><b>Principio de diseño:</b> tiempo real cuesta más — la arquitectura responde a la latencia que el proceso realmente necesita, no a la tecnología de moda. Por eso la reserva de inventario es síncrona (API), mientras la conciliación física puede resolverse de forma periódica (ETL).</div>
       </div>
 
       <div class="stack-view" id="view-datos">
@@ -318,9 +382,27 @@
         </div>
       </div>
 
+      <div class="stack-view" id="view-ecommerce">
+        <p class="note" style="margin:0 0 14px">Flujo de una venta hecha por el canal digital, mostrando qué actor interviene en cada paso y con qué software.</p>
+        <div class="chain-ecommerce">
+          <div class="chain-card"><h4>Explorar y pagar</h4><small>El cliente navega el catálogo, arma el carrito y paga en línea.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Cliente</span><span class="tag">Software: sitio e-commerce (ej. VTEX Store)</span></div>
+          <div class="chain-card"><h4>Pedido creado</h4><small>Ventas del canal digital registra el pedido con ID único.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Ventas</span><span class="tag">Software: OMS / CRM (VTEX OMS)</span></div>
+          <div class="chain-card"><h4>Inventario reservado</h4><small>Bodega valida existencia y bloquea el stock para ese pedido.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Bodega</span><span class="tag">Software: WMS (Odoo Inventory)</span></div>
+          <div class="chain-card"><h4>Producción si falta stock</h4><small>Planta recibe una orden de producción cuando no hay disponibilidad.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Planta</span><span class="tag">Software: MRP ligero (Odoo Manufacturing)</span></div>
+          <div class="chain-card"><h4>Alistamiento y despacho</h4><small>Logística prepara, empaca y despacha el pedido al cliente.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Logística</span><span class="tag">Software: WMS / TMS</span></div>
+          <div class="chain-card"><h4>Factura y cobro</h4><small>Finanzas emite la factura electrónica y registra el pago.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Finanzas</span><span class="tag">Software: ERP (Siigo)</span></div>
+          <div class="chain-card"><h4>Posventa</h4><small>Se atienden garantías, devoluciones o reclamos del pedido digital.</small><span class="tag" style="background:var(--violet-soft);color:#6358D7">Actor: Posventa</span><span class="tag">Software: CRM (módulo de servicio)</span></div>
+        </div>
+      </div>
+
       <div class="grid2" style="margin-top:16px">
         <div class="card"><h3>Controles críticos</h3><p class="note"><b>Idempotencia:</b> la misma solicitud no puede crear dos pedidos.<br><b>Reserva:</b> el stock se bloquea antes de comprometer la entrega.<br><b>No facturar sin despacho:</b> finanzas requiere confirmación del flujo físico.</p></div>
-        <div class="card"><h3>Corrección técnica importante</h3><p class="note">La conciliación de inventario físico no la hace “un ETL” por sí sola. Se requiere <b>conteo físico</b>, comparación contra sistema, análisis de diferencias y ajuste autorizado. El sistema ayuda, pero el control operativo sigue siendo indispensable.</p></div>
+        <div class="card"><h3>Corrección técnica importante</h3><p class="note">La conciliación de inventario físico no la hace “un ETL (Extract, Transform, Load)” por sí sola. Se requiere <b>conteo físico</b>, comparación contra sistema, análisis de diferencias y ajuste autorizado. El sistema ayuda, pero el control operativo sigue siendo indispensable.</p></div>
+      </div>
+
+      <div class="grid2" style="margin-top:16px">
+        <div class="card"><h3>Seguridad transversal: IAM y zero trust</h3><p class="note">IAM (Identity and Access Management — gestión de identidades y accesos) define quién entra a cada sistema y con qué permiso mínimo. El principio de <b>zero trust</b> (cero confianza implícita) exige evaluar cada acceso — a bodega, facturación o datos de cliente — según identidad, dispositivo, contexto y política, sin asumir confianza solo por estar dentro de la red de Andina Bikes.</p></div>
+        <div class="recommendation"><h3>Modelo de despliegue</h3><p>Híbrido / SaaS (Software as a Service) en la nube: reduce la inversión inicial frente a montar servidores propios (on-premises), encaja con el presupuesto limitado y los seis meses del caso. A cambio, exige definir con el proveedor cómo se gobiernan los datos y cómo se sale del servicio si algo no funciona.</p></div>
       </div>
     </section>
 
@@ -355,6 +437,32 @@
           <div class="phase"><span>Sem 15–20</span><b>Producción + finanzas</b><small>integración gradual</small></div>
           <div class="phase"><span>Sem 21–24</span><b>Estabilización</b><small>soporte, adopción y métricas</small></div>
         </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Riesgos de la alternativa elegida</h3>
+        <p class="note" style="margin:8px 0 14px">Riesgos propios del enfoque híbrido por fases (alternativa C), para anticipar preguntas del comité.</p>
+        <div class="risk-grid">
+          <div class="risk"><h4>Dependencia del proveedor de integración</h4><p>Si la capa de integración (iPaaS) falla o cambia de condiciones comerciales, se afecta todo el flujo pedido → cobro a la vez.</p></div>
+          <div class="risk"><h4>Baja adopción del equipo</h4><p>Ventas, bodega o finanzas pueden seguir usando hojas de cálculo en paralelo si no hay acompañamiento en el cambio.</p></div>
+          <div class="risk"><h4>Calidad de datos al migrar</h4><p>Si el maestro de clientes/productos migra con errores, el problema de inventario no confiable se repite dentro del nuevo sistema.</p></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Métricas de seguimiento</h3>
+        <p class="note" style="margin:8px 0 14px">Las 4 categorías que pide la guía del profesor, aplicadas al caso.</p>
+        <div class="kpi-grid">
+          <div class="kpi-card"><span class="badge blue">Industrial</span><div class="target">OTIF ↑</div><small>On Time In Full · tiempo de ciclo pedido → cobro · costo por pedido despachado</small></div>
+          <div class="kpi-card"><span class="badge">Proceso</span><div class="target">Exactitud ↑</div><small>Exactitud de inventario · first-pass yield · % retrabajo por reconciliación</small></div>
+          <div class="kpi-card"><span class="badge gold">Adopción</span><div class="target">Uso por rol ↑</div><small>% pedidos por el nuevo flujo · tiempo de aprendizaje · satisfacción del equipo</small></div>
+          <div class="kpi-card"><span class="badge red">Sistemas</span><div class="target">Disponibilidad ↑</div><small>% uptime de integración · latencia de reserva (API) · fallos de integración / semana</small></div>
+        </div>
+      </div>
+
+      <div class="recommendation" style="margin-top:16px">
+        <h3>Recomendación ejecutiva</h3>
+        <p>Se recomienda la alternativa <b>C — híbrido por fases</b>: capa de integración y datos maestros primero, visibilidad de inventario en el corto plazo, y evaluar un ERP integral solo después de estabilizar el proceso pedido → cobro. Es la opción con mejor puntaje ponderado con los pesos actuales, respeta el presupuesto limitado y no interrumpe la operación durante los seis meses del caso — a cambio de un riesgo de adopción que debe gestionarse con acompañamiento activo a los equipos.</p>
       </div>
     </section>
 
